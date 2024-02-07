@@ -1,0 +1,15 @@
+# Local configuration
+local.properties
+
+# Editors / IDE
+.fleet/
+.idea/
+
+# Mac OS
+.DS_Store
+
+# Gradle
+.gradle
+
+# Build
+build/
