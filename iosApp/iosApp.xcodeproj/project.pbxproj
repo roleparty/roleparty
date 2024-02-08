@@ -57,6 +57,7 @@
 				7555FF7C242A565900829871 /* Products */,
 				42799AB246E5F90AF97AA0EF /* Frameworks */,
 				D4384B88250A86458AECEA5B /* xcuserdata */,
+				D43848D3BC272FB8B6D9F196 /* project.xcworkspace */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +96,30 @@
 			path = xcschemes;
 			sourceTree = "<group>";
 		};
+		D43842660FEA6AF35E542F6F /* xcshareddata */ = {
+			isa = PBXGroup;
+			children = (
+				D4384C3399FF8E3336368DD5 /* swiftpm */,
+			);
+			path = xcshareddata;
+			sourceTree = "<group>";
+		};
+		D438465B1E92BFC7FBBBB454 /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = configuration;
+			sourceTree = "<group>";
+		};
+		D43848D3BC272FB8B6D9F196 /* project.xcworkspace */ = {
+			isa = PBXGroup;
+			children = (
+				D43842660FEA6AF35E542F6F /* xcshareddata */,
+			);
+			name = project.xcworkspace;
+			path = iosApp.xcodeproj/project.xcworkspace;
+			sourceTree = "<group>";
+		};
 		D4384B88250A86458AECEA5B /* xcuserdata */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +127,14 @@
 			);
 			name = xcuserdata;
 			path = iosApp.xcodeproj/xcuserdata;
+			sourceTree = "<group>";
+		};
+		D4384C3399FF8E3336368DD5 /* swiftpm */ = {
+			isa = PBXGroup;
+			children = (
+				D438465B1E92BFC7FBBBB454 /* configuration */,
+			);
+			path = swiftpm;
 			sourceTree = "<group>";
 		};
 		D4384CA378E4B7200BDFF375 /* sylvain.barre-persyn.xcuserdatad */ = {
