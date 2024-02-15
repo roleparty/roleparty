@@ -4,10 +4,20 @@ data class Monster(
     val name: String,
     val type: String,
     val size: Size,
-    val alignement: String,
+    val alignment: String,
     val armorClass: UInt,
     val hitPoints: HitPoints,
-    val speeds: List<Speed>
+    val speeds: MovementSpeedSet,
+    val abilities: AbilitySet,
+    val skills: SkillSet,
+    val savingThrows: SavingThrowSet,
+    val senses: Senses,
+    val languages: Languages,
+    val challengeRating: ChallengeRating,
+    val specialAbilities: List<SpecialAbility>,
+    val actions: List<Action>,
+    val legendaryActionsDescripion: String,
+    val legendaryActions: List<Action>
 )
 
 data class HitPoints(
@@ -15,25 +25,10 @@ data class HitPoints(
     val dice: String
 )
 
-data class Speed(
-    val type: Type,
-    val value: UInt,
-    val unit: Unit
-) {
-    
-    enum class Type {
-        WALK,
-        SWIM
-    }
-    
-    enum class Unit {
-        FEET,
-        SQUARES,
-        METERS
-    }
+
+@JvmInline
+value class Modifier(private val value: Int) {
+
+    override fun toString() = if (value < 0) "$value" else "+$value"
 }
 
-sealed class Ability(val value: UInt) {
-    
-    class Strength()
-}
