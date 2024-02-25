@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres:12
+    restart: always
+    container_name: roleparty-db
+    environment:
+      - POSTGRES_DB=roleparty
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5433:5432'

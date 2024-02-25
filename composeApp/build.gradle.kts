@@ -54,9 +54,14 @@ kotlin {
             implementation(compose.foundation)
             implementation(compose.material3)
             implementation(compose.ui)
-            @OptIn(ExperimentalComposeLibrary::class)
             implementation(compose.components.resources)
             implementation(projects.shared)
+
+            implementation(libs.voyager.navigator)
+            implementation(libs.voyager.screenModel)
+            implementation(libs.voyager.bottomSheetNavigator)
+            implementation(libs.voyager.tabNavigator)
+            implementation(libs.voyager.transitions)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
