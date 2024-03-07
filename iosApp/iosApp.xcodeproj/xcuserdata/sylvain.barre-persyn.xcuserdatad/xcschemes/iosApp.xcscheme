@@ -16,9 +16,10 @@
       </BuildActionEntries>
    </BuildAction>
    <LaunchAction
-      useCustomWorkingDirectory = "NO"
+      useCustomWorkingDirectory = "YES"
       buildConfiguration = "Debug"
-      allowLocationSimulation = "YES">
+      allowLocationSimulation = "YES"
+      customWorkingDirectory = "/Users/sylvain.barre-persyn/Projects/roleparty-ktor">
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
